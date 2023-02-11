@@ -11,7 +11,9 @@
 </head>
 <body>
   <main class="main-container">
+
     <img src="public/illustration-hero.svg" alt="musical image">
+
     <section class="order-summary container">
       <h1 class="order-title">
         Order Summary
@@ -26,29 +28,27 @@
       <div class="annual-info">
         <img src="public/icon-music.svg" alt="music symbol">
         <div>
-          <h4>
+          <h4 id="plan-name">
             Annual Plan
           </h4>
-          <p>
+          <p id="plan-price">
             $59.99/year
           </p>
         </div>
       </div>
-      
-
-      <a href="#" class="change-btn">Change</a>
+      <a href="#" class="change-btn" onclick="changePlan()">Change</a>
     </section>
 
     <section class="btn container">
-      <button class="proceed-btn container">
+      <button class="proceed-btn container" onclick="makePayment()">
         Proceed to Payment
       </button>
-      <button class="cancel-btn container">
+      <button class="cancel-btn container" onclick="cancelOrder()">
         Cancel Order
       </button>
     </section>
 
-
   </main>
+  <script src="index.js"></script>
 </body>
 </html>
