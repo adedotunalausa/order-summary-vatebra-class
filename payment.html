@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Payment</title>
+</head>
+<body>
+  <main class="main-container">
+    <img src="public/illustration-hero.svg" alt="musical image">
+
+    <section class="container margin-bottom">
+      <h1 class="title">Payment Page</h1>
+      <form class="form" id="payment-form">
+        <label for="firstname">
+          <input name="firstname" placeholder="Firstname" class="form-input margin-bottom" type="text" id="firstname"/>
+        </label>
+        <label for="lastname">
+          <input name="lastname" placeholder="Lastname" class="form-input margin-bottom" type="text" id="lastname"/>
+        </label>
+        <label for="card-number">
+          <input name="card-number" placeholder="Card Number" class="form-input margin-bottom" type="text" id="card-number"/>
+        </label>
+        <label for="card-expiry">
+          <input name="card-expiry" placeholder="Card Expiry" class="form-input margin-bottom" type="text" id="card-expiry"/>
+        </label>
+        <input type="submit" value="Make Payment" class="btn proceed-btn make-payment-btn margin-bottom"/>
+      </form>
+    </section>
+
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>

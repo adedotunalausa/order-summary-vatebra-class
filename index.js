@@ -1,7 +1,3 @@
-function makePayment() {
-    alert("Payment Successful");
-}
-
 const cancelOrder = () => {
     alert("Order canceled successfully");
 }
@@ -22,3 +18,15 @@ function changePlan() {
     }
     document.getElementById("plan-price").innerHTML = price;
 }
+
+const paymentForm = document.querySelector("#payment-form");
+
+paymentForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const firstname = paymentForm.elements["firstname"].value.trim();
+    const lastname = paymentForm.elements["lastname"].value.trim();
+    const cardNumber = paymentForm.elements["card-number"].value.trim();
+    const cardExpiry = paymentForm.elements["card-expiry"].value.trim();
+
+    alert(`Firstname: ${firstname}, Lastname: ${lastname}, cardNumber: ${cardNumber}, cardExpiry: ${cardExpiry}`)
+})
